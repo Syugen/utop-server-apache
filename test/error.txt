@@ -1,0 +1,301 @@
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+======================================================================
+ERROR: test_applied_to_degree_1 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 113, in test_applied_to_degree_1
+    self.assertTrue(admission.applied_to_degree(record, 'BArts'))
+AttributeError: 'module' object has no attribute 'applied_to_degree'
+
+======================================================================
+ERROR: test_applied_to_degree_2 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 118, in test_applied_to_degree_2
+    self.assertFalse(admission.applied_to_degree(record, 'BSci'))
+AttributeError: 'module' object has no attribute 'applied_to_degree'
+
+======================================================================
+ERROR: test_applied_to_degree_3 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 123, in test_applied_to_degree_3
+    self.assertFalse(admission.applied_to_degree(record, 'BArts?'))
+AttributeError: 'module' object has no attribute 'applied_to_degree'
+
+======================================================================
+ERROR: test_applied_to_degree_4 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 128, in test_applied_to_degree_4
+    self.assertFalse(admission.applied_to_degree(record, 'Arts'))
+AttributeError: 'module' object has no attribute 'applied_to_degree'
+
+======================================================================
+ERROR: test_applied_to_degree_5 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 133, in test_applied_to_degree_5
+    self.assertFalse(admission.applied_to_degree(record, ',BArts'))
+AttributeError: 'module' object has no attribute 'applied_to_degree'
+
+======================================================================
+ERROR: test_applied_to_degree_6 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 138, in test_applied_to_degree_6
+    self.assertTrue(admission.applied_to_degree(record, 'LOL'))
+AttributeError: 'module' object has no attribute 'applied_to_degree'
+
+======================================================================
+ERROR: test_applied_to_degree_7 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 143, in test_applied_to_degree_7
+    self.assertFalse(admission.applied_to_degree(record, 'What'))
+AttributeError: 'module' object has no attribute 'applied_to_degree'
+
+======================================================================
+ERROR: test_decide_admission_1 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 148, in test_decide_admission_1
+    self.assertEqual(admission.decide_admission(80, 80), 'accept')
+AttributeError: 'module' object has no attribute 'decide_admission'
+
+======================================================================
+ERROR: test_decide_admission_2 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 152, in test_decide_admission_2
+    self.assertEqual(admission.decide_admission(80, 79.9), 'accept')
+AttributeError: 'module' object has no attribute 'decide_admission'
+
+======================================================================
+ERROR: test_decide_admission_3 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 156, in test_decide_admission_3
+    self.assertEqual(admission.decide_admission(80, 80.1), 'reject')
+AttributeError: 'module' object has no attribute 'decide_admission'
+
+======================================================================
+ERROR: test_decide_admission_4 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 160, in test_decide_admission_4
+    self.assertEqual(admission.decide_admission(80, 75), 'accept with scholarship')
+AttributeError: 'module' object has no attribute 'decide_admission'
+
+======================================================================
+ERROR: test_decide_admission_5 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 164, in test_decide_admission_5
+    self.assertEqual(admission.decide_admission(80, 75.1), 'accept')
+AttributeError: 'module' object has no attribute 'decide_admission'
+
+======================================================================
+ERROR: test_decide_admission_6 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 168, in test_decide_admission_6
+    self.assertEqual(admission.decide_admission(80, 74.9), 'accept with scholarship')
+AttributeError: 'module' object has no attribute 'decide_admission'
+
+======================================================================
+ERROR: test_decide_admission_7 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 172, in test_decide_admission_7
+    self.assertEqual(admission.decide_admission(80, 85), 'reject')
+AttributeError: 'module' object has no attribute 'decide_admission'
+
+======================================================================
+ERROR: test_extract_course_1 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 92, in test_extract_course_1
+    self.assertEqual(admission.extract_course(record, 1), 'MAT,90,94')
+AttributeError: 'module' object has no attribute 'extract_course'
+
+======================================================================
+ERROR: test_extract_course_2 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 97, in test_extract_course_2
+    self.assertEqual(admission.extract_course(record, 2), 'ENG,92,NE')
+AttributeError: 'module' object has no attribute 'extract_course'
+
+======================================================================
+ERROR: test_extract_course_3 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 102, in test_extract_course_3
+    self.assertEqual(admission.extract_course(record, 3), 'CHM,80,85')
+AttributeError: 'module' object has no attribute 'extract_course'
+
+======================================================================
+ERROR: test_extract_course_4 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 107, in test_extract_course_4
+    self.assertEqual(admission.extract_course(record, 1), 'ABC,90,94')
+AttributeError: 'module' object has no attribute 'extract_course'
+
+======================================================================
+ERROR: test_get_both_marks_1 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 76, in test_get_both_marks_1
+    self.assertEqual(admission.get_both_marks(record, 'MAT'), '90 94')
+AttributeError: 'module' object has no attribute 'get_both_marks'
+
+======================================================================
+ERROR: test_get_both_marks_2 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 81, in test_get_both_marks_2
+    self.assertEqual(admission.get_both_marks(record, 'ENG'), '92 NE')
+AttributeError: 'module' object has no attribute 'get_both_marks'
+
+======================================================================
+ERROR: test_get_both_marks_3 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 86, in test_get_both_marks_3
+    self.assertEqual(admission.get_both_marks(record, 'ABC'), '')
+AttributeError: 'module' object has no attribute 'get_both_marks'
+
+======================================================================
+ERROR: test_get_final_mark_1 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 47, in test_get_final_mark_1
+    self.assertEqual(admission.get_final_mark(record, '90', '92'), 91.0)
+AttributeError: 'module' object has no attribute 'get_final_mark'
+
+======================================================================
+ERROR: test_get_final_mark_2 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 53, in test_get_final_mark_2
+    self.assertEqual(admission.get_final_mark(record, '90', '91'), 90.5)
+AttributeError: 'module' object has no attribute 'get_final_mark'
+
+======================================================================
+ERROR: test_get_final_mark_3 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 58, in test_get_final_mark_3
+    self.assertEqual(admission.get_final_mark(record, '90', 'NE'), 45.0)
+AttributeError: 'module' object has no attribute 'get_final_mark'
+
+======================================================================
+ERROR: test_get_final_mark_4 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 63, in test_get_final_mark_4
+    self.assertEqual(admission.get_final_mark(record, '90', 'NE'), 90.0)
+AttributeError: 'module' object has no attribute 'get_final_mark'
+
+======================================================================
+ERROR: test_get_final_mark_5 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 69, in test_get_final_mark_5
+    self.assertEqual(admission.get_final_mark(record, '90', '92'), 91.0)
+AttributeError: 'module' object has no attribute 'get_final_mark'
+
+======================================================================
+ERROR: test_is_special_case_1 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 21, in test_is_special_case_1
+    self.assertTrue(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+======================================================================
+ERROR: test_is_special_case_2 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 26, in test_is_special_case_2
+    self.assertTrue(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+======================================================================
+ERROR: test_is_special_case_3 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 31, in test_is_special_case_3
+    self.assertFalse(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+======================================================================
+ERROR: test_is_special_case_4 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 36, in test_is_special_case_4
+    self.assertFalse(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+======================================================================
+ERROR: test_is_special_case_5 (__main__.TestAdmissionDefault)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 41, in test_is_special_case_5
+    self.assertFalse(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+======================================================================
+ERROR: test_is_special_case_6 (__main__.TestAdmissionSpecialSchool)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 184, in test_is_special_case_6
+    self.assertTrue(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+======================================================================
+ERROR: test_is_special_case_7 (__main__.TestAdmissionSpecialSchool)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 189, in test_is_special_case_7
+    self.assertFalse(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+======================================================================
+ERROR: test_is_special_case_8 (__main__.TestAdmissionSpecialSchool)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 194, in test_is_special_case_8
+    self.assertTrue(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+======================================================================
+ERROR: test_is_special_case_10 (__main__.TestAdmissionYear)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 211, in test_is_special_case_10
+    self.assertTrue(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+======================================================================
+ERROR: test_is_special_case_11 (__main__.TestAdmissionYear)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 216, in test_is_special_case_11
+    self.assertFalse(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+======================================================================
+ERROR: test_is_special_case_9 (__main__.TestAdmissionYear)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 206, in test_is_special_case_9
+    self.assertFalse(admission.is_special_case(record))
+AttributeError: 'module' object has no attribute 'is_special_case'
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.006s
+
+FAILED (errors=37)

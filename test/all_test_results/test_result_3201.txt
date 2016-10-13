@@ -1,0 +1,8 @@
+    is_special_case: 8/11
+    get_final_mark: 5/5
+    get_both_marks: 1/3
+    extract_course: 3/4
+    applied_to_degree: 4/7
+    decide_admission: 5/7
+Total: 26/37
+Please note that we didn't check your style and docstring.
