@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>
+            CSC108 Assignment 2: 背景与术语
+        </title>
+    </head>
+    <body>
+        <div class="title">
+            <h1>
+                Assignment 2: 背景与术语
+            </h1>
+        </div>
+        <p>
+            本也包含A2所需背景知识：DNA是什么，DNA结构简单说明，以及讲义中所出现的术语的定义，
+            如DNA回文（palindrome），酶（enzyme），cutter等。
+        </p>
+
+        <h2>
+            脱氧核糖核酸
+        </h2>
+        <p>
+            脱氧核糖核酸（Deoxyribonucleic acid, DNA）分子是生命的基础。
+            在本次作业中，需要你写一些function来操纵DNA。
+        </p>
+        <p>
+            <a href="https://zh.wikipedia.org/wiki/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6">
+            <em>生物信息学</em></a>（不用读）是对如DNA这种复杂生物结构分析和操作的一门学科。
+            计算机科学在生物信息学中有重要作用。
+        </p>
+
+        <h2>
+            DNA结构
+        </h2>
+
+        <p>
+            DNA中有一个包含化学碱基（base）的线性序列，这些碱基分别是腺嘌呤（adenine, A）、
+            胸腺嘧啶（thymine, T）、胞嘧啶（cytosine, C）、鸟嘌呤（guanine, G）。<br>
+            这些碱基指导细胞表达哪些蛋白质和这些蛋白质的形态。DNA有一个双螺旋结构（如同被扭曲
+            的梯子一样），两条DNA链（strand）相互平行；<em>碱基对（base pair）</em>是梯
+            子的横梁。<br>
+            在这些“横梁”中，腺嘌呤A与胸腺嘧啶T配对（A-T），鸟嘌呤G与胞嘧啶C配对（G-C）。
+        </p>
+
+        <h2>
+            DNA序列与DNA链
+        </h2>
+        <p>
+            这是一个已经配对了的<em>序列（sequence）</em>:
+        </p>
+        <pre>
+GGATC
+CCTAG
+</pre>
+        <p>
+            每一行是一条DNA的<em>链（strand）</em>，两条链在一起是一个DNA<em>序列</em>。
+            在上述例子中，两条链分别是<code>GGATC</code>和<code>CCTAG</code>。<br>
+            由于DNA是一个碱基对的序列（译者：而碱基对只能是A-T，C-G的配对），因此任意一条链
+            都可以由另一条链构造出来，因而很多网上的例子只给出两条链中的一条。
+        </p>
+        <p>
+            有很多网站提供了DNA的例子，包括<a target="_blank"
+            href="http://www.ncbi.nlm.nih.gov:80/nuccore/58060?report=genbank"
+            title="Nucleotide">National Center for Biotechnology
+            Information (NCBI)</a>。<br>
+            在"ORIGIN"这里给出了一个DNA序列。<br>
+            注意：这里只给了序列中的一条链，因为另一条能由它而构造出来。
+        </p>
+
+        <h2>
+            DNA回文
+        </h2>
+        <p>
+            根据New Oxford American Dictionary的定义，<em>回文（palindrome）</em>
+            是“正反顺序阅读相同的一段文字”。<br>
+            比如<em>Madam, I'm Adam.</em> 或者<em>nurses run</em>.”（这些例子中忽略
+            了空格和标点符号）。<br>
+            “<em>radar</em>”是一个奇数长度的回文单词，而“<em>toot</em>”是偶数长度的。
+        </p>
+        <p>
+            <em>DNA回文（DNA palindromes）</em>是出现在DNA分子相对应的两条链上的回文。
+            以下是两个例子：
+        </p>
+        <pre>
+GGATCC           GGCC
+CCTAGG           CCGG
+</pre>
+        <p>
+            请注意，这些DNA分子上端的链（如<code>GGATCC</code>）是其下端的链的反向对应
+            （<code>CCTAGG</code>）。<br>
+            结果就是，如果你把上下两条链接起来，那么你就得到了一个回文。<br>
+            要在这些出现回文的地方把DNA切断是很容易的，这种要切断的位置被称为DNA序列中的
+            <em>限制性内切位点（restriction sites）</em>（译者：下文简称“限制性切点”）。
+        </p>
+    </div>
+    <div class="slide">
+        <h2>
+            DNA、变异、限制酶
+        </h2>
+        <p>
+            DNA有时会发生<em>变异（mutations）</em>，变异是DNA序列的变化。<br>
+            基因研究者通常想修复这些变异，他们可以通过把变异的一段序列切掉，再切一段另一个
+            DNA分子上没有变异的相同一段，再粘（或称<em>嫁接（splicing）</em>）到出问题的
+            DNA分子的相应位置。
+        </p>
+        <p>
+            <em>酶（Enzymes）</em>是一种控制生物反应的蛋白质。一些酶与DNA互动。<br>
+            <em>限制酶（Restriction enzymes）</em>（高中教科书全称为“限制性核酸内切酶”）
+            是一种在DNA限制性切点做切断或嫁接操作的一种酶。<br>
+            维基百科有一个<a href="https://zh.wikipedia.org/wiki/%E9%99%90%E5%88%B6%E9%85%B6#.E4.BE.8B.E5.AD.90">
+            常见限制酶列表</a>。以下是其中的一些酶，以及它们的识别序列（Recognition sequence）：
+        </p>
+        <table border="1" summary="Enzymes and their recognition sequences">
+            <tr>
+                <th>
+                    名称
+                </th>
+                <th>
+                    识别序列
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    EcoRI
+                </td>
+                <td>
+                    <code>GAATTC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    BamHI
+                </td>
+                <td>
+                    <code>GGATCC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    HindIII
+                </td>
+                <td>
+                    <code>AAGCTT</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    TaqI
+                </td>
+                <td>
+                    <code>TCGA</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    NotI
+                </td>
+                <td>
+                    <code>GCGGCCGC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sau3A
+                </td>
+                <td>
+                    <code>GATC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PovII
+                </td>
+                <td>
+                    <code>CAGCTG</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SmaI
+                </td>
+                <td>
+                    <code>CCCGGG</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    HaeIII
+                </td>
+                <td>
+                    <code>GGCC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    HgaI
+                </td>
+                <td>
+                    <code>GACGC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    AluI
+                </td>
+                <td>
+                    <code>AGCT</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    EcoRV
+                </td>
+                <td>
+                    <code>GATATC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    KpnI
+                </td>
+                <td>
+                    <code>GGTACC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PstI
+                </td>
+                <td>
+                    <code>CTGCAG</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SacI
+                </td>
+                <td>
+                    <code>GAGCTC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SalI
+                </td>
+                <td>
+                    <code>GTCGAC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ScaI
+                </td>
+                <td>
+                    <code>AGTACT</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SphI
+                </td>
+                <td>
+                    <code>GCATGC</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    StuI
+                </td>
+                <td>
+                    <code>AGGCCT</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    XbaI
+                </td>
+                <td>
+                    <code>TCTAGA</code>
+                </td>
+            </tr>
+        </table>
+        <p>
+            限制酶做切割操作的特定的DNA回文成为<em>识别序列（recognition sequence）</em>。<br>
+            每种内切酶都有不同的识别序列。在实验室中，如果少量限制酶与DNA在溶液中混合，
+            它将在这个DNA中所有包含其识别序列的限制切点对其进行切割。
+        </p>
+
+        <h2>
+            修复变异DNA
+        </h2>
+        <p>
+            比如说有两个基本相同的DNA分子。每个都经历了一次<em>变异（mutation）</em>，
+            包括一些碱基对的替换、丢失和插入，而我们想生得到它没有变异的样子。<br>
+            我们可以这样做：先在第一条DNA中找到变异区域，把这个区域以及它在另一条DNA中的相应未变异
+            区域都剪切下来，然后用另一种酶，把从第二个DNA中切下来的好的这一段嫁接到第一个DNA分子中。
+        </p>
+        <p>
+            为了切掉变异区域，你需要切两次，在变异区域的两端各切一次。<br>
+            你还需要确保限制酶只在DNA分子中切一次：如果限制酶识别的DNA回文出现多于一次，
+            限制酶将会在所有切点进行切割，导致DNA被搞坏而无用。<br>
+            对于一个特定的DNA分子，“1-cutter”是一种只切一次的限制酶。
+        </p>
+
+        <h2>
+            学习拓展
+        </h2>
+        <p>
+            If this topic interests you and you want to learn more,
+            there are several good discussions about restriction enzymes
+            on the internet. John Kimball, a biology professor at
+            Harvard, has a nice description of <a target="top"
+            href="http://users.rcn.com/jkimball.ma.ultranet/BiologyPages/R/RestrictionEnzymes.html"
+            title="Restriction Enzymes">restriction enzymes</a>; once
+            you've skimmed that page, head to the <a target="top"
+            href="http://www.dnalc.org/ddnalc/resources/restriction.html"
+            title="DNA Restriction">Biology Animation Library</a> for
+            another description with an animation of the process.
+        </p>
+        <p>
+            There are several websites that, given a DNA molecule, will
+            list the restriction enzymes that will cut that molecule.
+            One of the more popular ones is <a target="top"
+            href="http://tools.neb.com/NEBcutter2/index.php"
+            title="NEBcutter V2.0">NEB Cutter</a>. Try pasting the
+            sequence from the <a target="top"
+            href="http://www.ncbi.nlm.nih.gov:80/nuccore/58060?report=genbank"
+            title="Nucleotide">National Center for Biotechnology
+            Information (NCBI)</a> into NEB Cutter and clicking the
+            Submit button; you will see a diagram of the results. To get
+            a list of the 1-cutters, including the indices ("cut
+            positions") in the DNA, click "1-cutters" in the List box in
+            the bottom left of the page.
+        </p>
+    </body>
+</html>
