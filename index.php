@@ -225,7 +225,7 @@ function validate(thisform)
 				<input type="text" class="text" name="email" id="email" value="Email" 
 				onfocus="if (this.value == 'Email') {this.value = '';};" 
 				onblur="if (this.value == '') {this.value = 'Email';}">
-				课程: [点击<a href="course.html" target="_blank">这里</a>查看辅导课程内容详情]<br>
+				课程: [<a href="course.html" target="_blank">详情</a>]
 				<span class="error">[10月22日更新CSC108 A2推荐]</span><br>
 				<span id="courseErr" class="error">*</span><br>
 				<select name="course" id="course" value="Course">
@@ -236,10 +236,9 @@ function validate(thisform)
 					<option value="CSC165">CSC165 (单人, $35/hr)</option>
 				</select>
 				地点: (如有特殊需求请与UtopTutor微信公众号联系)<br>
-				Bahen Center (<a href="location/ba.html" target="_blank">BA</a>)[默认首选]<br>
-				Kelly Library (<a href="location/kl.html" target="_blank"KL</a>>) [周末推荐]<br>
-				New College (<a href="location/nc.html" target="_blank">40/45 Willcocks St.</a>)<br>
-				Robarts Library (<a href="location/rb.html" target="_blank">RB</a>)<br>
+				<a href="location/ba.html" target="_blank">Bahen Center</a> [默认首选] /
+				<a href="location/kl.html" target="_blank">Kelly Library</a>) [周末推荐] /<br>
+				<a href="location/rb.html" target="_blank">Robarts Library</a><br>
 				<span id="policyErr" class="error"></span><br>
 				<input type='checkbox' id='policy' value='Policy'/>
 				I agree to the <a href="policy.html" target="_blank">Policy</a>.
