@@ -1,5 +1,6 @@
 all_test_results/
 error.txt
+a2_test_results.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

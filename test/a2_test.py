@@ -3,7 +3,7 @@ from palindromes import *
 from dna import *
 
 correctness = [0] * 10
-total = [5, 6, 6, 6, 6, 5, 6, 5, 5, 5]
+total = [5, 6, 6, 6, 6, 5, 6, 5, 5, 6]
 function_names = ['is_palindrome',
                   'is_palindromic_phrase',
                   'get_odd_palindrome_at',
@@ -29,7 +29,7 @@ class TestIsPalindrome(unittest.TestCase):
         correctness[0] += 1
 
     def test_is_palindrome_4(self):
-        self.assertFalse(is_palindrome('abc'))
+        self.assertFalse(is_palindrome('abca'))
         correctness[0] += 1
 
     def test_is_palindrome_5(self):
@@ -47,7 +47,7 @@ class TestIsPalindromePhrase(unittest.TestCase):
         correctness[1] += 1
 
     def test_is_palindromic_phrase_3(self):
-        self.assertFalse(is_palindromic_phrase('ABC'))
+        self.assertFalse(is_palindromic_phrase('ABCA'))
         correctness[1] += 1
 
     def test_is_palindromic_phrase_4(self):
@@ -311,6 +311,15 @@ class TestCorrectMutations(unittest.TestCase):
         correct_mutations(strands, 'ACGGCCTT', names, sequences)  
         self.assertEqual(strands, ['ACGTGGCCTT', 'GGCCTT'])
         correctness[9] += 1
+
+    def test_correct_mutations_6(self):
+        strands = ['ACGTGGCCTAGCT', 'GGCCCAGCGGCCAA']
+        names = ['HaeIII', 'HgaI', 'AluI']
+        sequences = ['GGCC', 'GACGC', 'AGCT']
+        correct_mutations(strands, 'ACGGCCTT', names, sequences)  
+        self.assertEqual(strands, ['ACGTGGCCTT', 'GGCCCAGCGGCCAA'])
+        correctness[9] += 1
+
         
 if __name__ == '__main__':
     unittest.main(exit=False)
@@ -329,6 +338,7 @@ if __name__ == '__main__':
     file.write(string)
     file.close()
 
+    import time
     file = open('a2_test_results.txt', 'a')
-    file.write(str(correctness) + '\n')
+    file.write(str(correctness) + ' ' + time.strftime("%Y/%m/%d %H:%M:%S") + '\n')
     file.close()

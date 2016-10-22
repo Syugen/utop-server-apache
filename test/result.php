@@ -15,12 +15,27 @@ ini_set('display_errors', 1); error_reporting(E_ALL);
 		header("Location: ../404.html");
 	else {
 		setcookie("csc108test_index", "", time()-86400);
-		$text = $_POST["textarea"];
-		$file = fopen("user_submission.py", "w") or die("Cannot open file.");
-		fwrite($file, $text);
-		fclose($file);
-		exec("python3 a1_test.py 2> error.txt");
-		unlink("user_submission.py");
+$upload_fail = 0;
+if(isset($_FILES['dna'])){
+    $name       = $_FILES['dna']['name'];
+    $temp_name  = $_FILES['dna']['tmp_name'];
+    if(!isset($name) || empty($name) || !move_uploaded_file($temp_name, './'.$name)){
+            echo 'Upload dna.py failed<br>';
+		$upload_fail = 1;
+    }
+};
+if(isset($_FILES['palindromes'])){
+    $name       = $_FILES['palindromes']['name'];
+    $temp_name  = $_FILES['palindromes']['tmp_name'];
+    if(!isset($name) || empty($name) || !move_uploaded_file($temp_name, './'.$name)){
+            echo 'Upload palindroms.py failed<br>';
+		$upload_fail = 1;
+    }
+};
+if(!$upload_fail){
+		exec("python3 a2_test.py 2> error.txt");
+		unlink("dna.py");
+		unlink("palindromes.py");
 		if(file_exists("test_result.txt")) {
 //			setcookie("csc108test", "csc108test", time()+86400);
 			$file = fopen("test_result.txt", "r");
@@ -40,8 +55,9 @@ ini_set('display_errors', 1); error_reporting(E_ALL);
 			echo $content."</pre></code>";
 		}
 	}
+}
 ?>
-<br><a href="index.php">返回</a>
+<br><a href="./">返回重新测试</a>
 <br><br>课程辅导报名网址：<a href="../index.php">utoptutoring.ml</a>
 </body>
 </html>
