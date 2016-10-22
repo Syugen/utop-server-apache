@@ -27,10 +27,13 @@
 		echo "<input name='uid' type='hidden'>";
 	}
 ?>
-	<textarea name="textarea" style="width:500px;height:500px;font-family:Courier New"></textarea><br>
+	上传palindromes.py:
+	<input type="file" name="palindromes"><br>
+	上传dna.py:
+	<input type="file" name="dna"><br>
+	文件名必须为"pylindromes.py"和"dna.py"，否则会编译失败。
 	<input name="submit" type="submit" value="提交">
 <br>课程辅导报名网址：<a href="../index.php">utoptutoring.ml</a>
 </form>
-</script>
 </body>
 </html>
