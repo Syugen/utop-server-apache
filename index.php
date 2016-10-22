@@ -226,6 +226,7 @@ function validate(thisform)
 				onfocus="if (this.value == 'Email') {this.value = '';};" 
 				onblur="if (this.value == '') {this.value = 'Email';}">
 				课程: [点击<a href="course.html" target="_blank">这里</a>查看辅导课程内容详情]<br>
+				<span class="error">[10月22日更新CSC108 A2推荐]</span><br>
 				<span id="courseErr" class="error">*</span><br>
 				<select name="course" id="course" value="Course">
 					<option value="0">PLEASE SELECT</option>
@@ -234,8 +235,9 @@ function validate(thisform)
 					<option value="CSC148">CSC148 (单人, $35/hr)</option>
 					<option value="CSC165">CSC165 (单人, $35/hr)</option>
 				</select>
-				地点:<br>
+				地点: (如有特殊需求请与UtopTutor微信公众号联系)<br>
 				Bahen Center (<a href="location/ba.html" target="_blank">BA</a>)[默认首选]<br>
+				Kelly Library (<a href="location/kl.html" target="_blank"KL</a>>) [周末推荐]<br>
 				New College (<a href="location/nc.html" target="_blank">40/45 Willcocks St.</a>)<br>
 				Robarts Library (<a href="location/rb.html" target="_blank">RB</a>)<br>
 				<span id="policyErr" class="error"></span><br>
