@@ -40,5 +40,8 @@
 	<input name="submit" type="submit" value="提交">
 <br><br><br>课程辅导报名网址：<a href="../index.php">utoptutoring.ml</a>
 </form>
+<img src="http://hitwebcounter.com/counter/counter.php?page=6518574&style=0024&nbdigits=6&type=ip&initCount=0" title="" Alt=""   border="0" >
+<br>
+<img src="http://hitwebcounter.com/counter/counter.php?page=6518573&style=0024&nbdigits=6&type=page&initCount=0" title="" Alt=""   border="0" >
 </body>
 </html>

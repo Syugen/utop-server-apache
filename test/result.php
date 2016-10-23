@@ -17,25 +17,26 @@ ini_set('display_errors', 1); error_reporting(E_ALL);
 		setcookie("csc108test_index", "", time()-86400);
 $upload_fail = 0;
 if(isset($_FILES['dna'])){
-    $name       = $_FILES['dna']['name'];
+    $name_dna   = $_FILES['dna']['name'];
     $temp_name  = $_FILES['dna']['tmp_name'];
-    if(!isset($name) || empty($name) || !move_uploaded_file($temp_name, './'.$name)){
+    if(!isset($name_dna) || $name_dna != "dna.py" || !move_uploaded_file($temp_name, $name_dna)){
             echo 'Upload dna.py failed<br>';
 		$upload_fail = 1;
     }
 };
 if(isset($_FILES['palindromes'])){
-    $name       = $_FILES['palindromes']['name'];
+    $name_pal   = $_FILES['palindromes']['name'];
     $temp_name  = $_FILES['palindromes']['tmp_name'];
-    if(!isset($name) || empty($name) || !move_uploaded_file($temp_name, './'.$name)){
-            echo 'Upload palindroms.py failed<br>';
+    if(!isset($name_pal) || $name_pal != "palindromes.py" || !move_uploaded_file($temp_name, $name_pal)){
+            echo 'Upload palindromes.py failed<br>';
 		$upload_fail = 1;
     }
 };
 if(!$upload_fail){
+		$file = fopen("ip.txt", "w") or die("Cannot open file.");
+		fwrite($file, $_SERVER["REMOTE_ADDR"]);
+		fclose($file);
 		exec("python3 a2_test.py 2> error.txt");
-		unlink("dna.py");
-		unlink("palindromes.py");
 		if(file_exists("test_result.txt")) {
 //			setcookie("csc108test", "csc108test", time()+86400);
 			$file = fopen("test_result.txt", "r");
@@ -56,6 +57,9 @@ if(!$upload_fail){
 		}
 	}
 }
+unlink("dna.py");
+unlink("palindromes.py");
+unlink("ip.txt");
 ?>
 <br><a href="./">返回重新测试</a>
 <br><br>课程辅导报名网址：<a href="../index.php">utoptutoring.ml</a>
