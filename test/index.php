@@ -10,7 +10,7 @@
             // csc108test_index是测试页面未刷新的cookie
             setcookie("csc108test_index", "csc108test_index", time()+86400);
         ?>
-
+        
         <h3>CSC108 Assignment 2免费测试</h3>
         <form name="form" id="form" method="post" action="result.php" enctype="multipart/form-data">
             <table>
