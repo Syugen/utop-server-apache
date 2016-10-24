@@ -23,7 +23,7 @@
                     <td><input type="file" name="dna" id="dna"></td>
                 </tr>
             </table>
-            文件名必须为"pylindromes.py"和"dna.py"，否则会编译失败。<br>
+            文件名必须为"palindromes.py"和"dna.py"，否则会编译失败。<br>
             说明：点击提交按钮，表明你已知晓你的代码将会加密传输给utoptutoring.ml服务器；<br>
             服务器在测试完你的代码后会立刻（在你看到结果之前）删除你传送的文件。<br>
             <input name="submit" type="submit" value="提交">

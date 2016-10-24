@@ -35,97 +35,6 @@
                      " ORDER BY time, date";
             $result = mysqli_query($dbc, $query);
         ?>
-<script>
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
-}
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length,c.length);
-        }
-    }
-    return "";
-}
-function autofill() {
-    alert("?");
-    if (getCookie("utoptutorUser") != "") {
-        document.getElementById("name").value = getCookie("utoptutorUser");
-    }
-    if (getCookie("utoptutorEmail") != "")
-        document.getElementById("email").value = getCookie("utoptutorEmail");
-    if (getCookie("utoptutorCourse") != "")
-        document.getElementById("course").selectedIndex = getCookie("utoptutorCourse");
-}
-function validate(thisform)
-{
-    if(document.getElementById("submitting").innerHTML == "Submitting...") {
-        document.getElementById("submitErr").innerHTML = "Please do not re-submit.";
-        return false;
-    }
-    var flag = true
-    var reg_email = /^(\w-*)+(\.\w+)*@(\w)+((\.\w+)+)$/;
-    var reg_ut = /^\w+\.\w+@mail.utoronto.ca$/;
-    
-    if(thisform.name.value == "WeChat Name") {
-        document.getElementById("nameErr").
-            innerHTML = "* You must enter a name";
-        flag = false;
-    } else document.getElementById("nameErr").innerHTML = "*";
-    
-    if(thisform.email.value == "Email") {
-        document.getElementById("emailErr").
-        innerHTML = "* You must enter an email";
-        flag = false;
-    } else if(!reg_email.test(thisform.email.value)) {
-        document.getElementById("emailErr").innerHTML = "* Invalid email";
-        flag = false;
-    } else if(!reg_ut.test(thisform.email.value)) {
-        document.getElementById("emailErr").
-            innerHTML = "* Not a valid UofT email";
-        flag = false;
-    } else document.getElementById("emailErr").innerHTML = "*";
-    
-    if(thisform.course.selectedIndex == 0) {
-        document.getElementById("courseErr").
-            innerHTML = "* You must choose a course";
-        flag = false;
-    } else document.getElementById("courseErr").innerHTML = "*";
-    
-    if(thisform.policy.checked == false) {
-        document.getElementById("policyErr").
-            innerHTML = "* You must agree to the policy";
-        flag = false;
-    } else document.getElementById("policyErr").innerHTML = "";
-    
-    if(!flag)
-        document.getElementById("submitErr").
-            innerHTML = "Please check your information and try again.";
-    else {
-        document.getElementById("submitErr").innerHTML = "";
-        document.getElementById("submitting").innerHTML = "Submitting...";
-/*        if(thisform.remember.checked == true) {
-            setCookie("utoptutorRememberUser", thisform.name.value, 365);
-            setCookie("utoptutorRememberEmail", thisform.email.value, 365);
-            setCookie("utoptutorRememberCourse", thisform.course.selectedIndex, 365);
-        } else {
-            setCookie("utoptutorRememberUser", thisform.name.value, 0);
-            setCookie("utoptutorRememberEmail", thisform.email.value, 0);
-            setCookie("utoptutorRememberCourse", thisform.course.selectedIndex, 0);
-        }
-*/    }
-    return flag;
-}
-</script>
 </head>
 
     <body>
@@ -218,31 +127,39 @@ function validate(thisform)
             <div class="contact-details">
                 <form action="submit.php" onSubmit="return validate(this);" method="post">
                 <div class="contact-left">
-                    微信ID (非昵称，请勿输入中文字符): <span id="nameErr" class="error">*</span><br>
+                    微信ID (非昵称，请勿输入中文字符):
+                    <span id="nameErr" class="error">*</span><br>
                     <input type="text" class="text" name="name" id="name"
-                    placeholder="WeChat Name" pattern="[\w.-]+">
-                    U of T 邮箱: <span id="emailErr" class="error">*</span><br>
+                    placeholder="WeChat Name" pattern="[\w.-]+" required>
+                    
+                    U of T 邮箱:
+                    <span id="emailErr" class="error">*</span><br>
                     <input type="text" class="text" name="email" id="email"
-                    placeholder="Email" pattern="\w+\.\w+@mail.utoronto.ca">
+                    placeholder="Email" pattern="\w+\.\w+@mail.utoronto.ca" required>
+                    
                     课程: [<a href="course.html" target="_blank">详情</a>]
-                    <span class="error">[10月22日更新CSC108 A2推荐]</span><br>
+                    <span class="error">[10月22日更新CSC108 A2推荐]</span>
                     <span id="courseErr" class="error">*</span><br>
-                    <select name="course" id="course" value="Course">
-                        <option value="0">PLEASE SELECT</option>
+                    <select name="course" id="course" required>
+                        <option value="0" selected disabled>PLEASE SELECT</option>
                         <option value="CSC108">CSC108 (单人, $30/hr)</option>
                         <option value="CSC108 (Group)">CSC108 (两人, $25/hr/人)</option>
                         <option value="CSC148">CSC148 (单人, $35/hr)</option>
                         <option value="CSC165">CSC165 (单人, $35/hr)</option>
                     </select>
-                    地点: (如有特殊需求请与UtopTutor微信公众号联系)<br>
-                    <a href="location/ba.html" target="_blank">Bahen Center</a> [默认首选] /
-                    <a href="location/kl.html" target="_blank">Kelly Library</a>) [周末推荐] /<br>
-                    <a href="location/rb.html" target="_blank">Robarts Library</a><br>
-                    <span id="policyErr" class="error"></span><br>
-                    <input type='checkbox' id='policy' value='Policy'/>
+                    
+                    地点: (如有特殊需求请联系微信客服UtopTutor)<br>
+                    Bahen Center [默认首选] / Kelly Library [周末推荐]<br>
+                    Robarts Library / New College
+                    [<a href="location" target="_blank">地图</a>]<br><br>
+                    
+                    <input type='checkbox' id='policy' required>
                     I agree to the <a href="policy.html" target="_blank">Policy</a>.
-                    <span class="error">[10月1日更新]</span>
-                    <span class="error">*</span><br>
+                    <span id="policyErr" class="error">*</span>
+                    <span class="error">[10月1日更新]</span><br>
+                    
+                    <input type='checkbox' id='remember' name='remember' value='remember'>
+                    记住微信、邮箱和课程<br>
                 </div>
                 <div class="contact-right">
                     注：勾选某一时间表示选择该小时。例如勾选“9:00”表示选择九点到十点。可多选。<br>
@@ -278,7 +195,7 @@ function validate(thisform)
                 <div class="contact-right-submit">
                     <span id="submitErr" class="error"></span>
                     <span id="submitting"></span>
-                    <input type="submit" name="submit" id="submit" value="Submit" />
+                    <input type="submit" name="submit" id="submit" value="submit" />
                 </div>
                 </form>
             </div>         
@@ -297,5 +214,6 @@ function validate(thisform)
     </div>
     <!--end-footer-section-->
 
+    <script src="js/index.js"></script>
 </body>
 </html> 

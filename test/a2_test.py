@@ -98,7 +98,7 @@ class TestGetOddPalindromeAt(unittest.TestCase):
         result[2][3] = '.'
 
     def test_get_odd_palindrome_at_5(self):
-        self.assertEqual(get_odd_palindrome_at('aba', 0), 'a')
+        self.assertEqual(get_odd_palindrome_at('aaa', 0), 'a')
         correctness[2] += 1
         result[2][4] = '.'
 
