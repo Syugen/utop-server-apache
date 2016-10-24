@@ -165,31 +165,29 @@
                     注：勾选某一时间表示选择该小时。例如勾选“9:00”表示选择九点到十点。可多选。<br>
                     <table border="1" style="table-layout: fixed; 
                     word-break: break-all; word-wrap: break-word;">
-                        <?php
-    
-    echo "<tr>";
-    for($i = 0; $i <= 6; $i++) {
-        $date = date("m-d", strtotime($startDate." +".$i." day"));
-        $day = substr(date("l", strtotime($startDate." +".$i." day")), 0, 3).".";
-        echo "<th scope='col'>$date<br>$day</th>";
-    }
-    echo "</tr>";
-    for($i = 9; $i <= 21; $i++) {
-        echo "<tr>";
-        for($j = 1; $j <= 7; $j++) {
-            echo "<td>";
-            $row = mysqli_fetch_array($result);
-            $value = $row["date"].$row["time"];
-            if(!$row['order_id'])
-                echo "<input type='checkbox' name='$value' value='$value'/>
-                    <label for='$value'>".$row["time"].":00</label></td>";
-            else echo "N/A</td>";
-        }
-        echo "</tr>";
-    }
-    mysqli_close($dbc);
-    
-                        ?>
+                    <?php
+                        echo "<tr>";
+                        for($i = 0; $i <= 6; $i++) {
+                            $date = date("m-d", strtotime($startDate." +".$i." day"));
+                            $day = substr(date("l", strtotime($startDate." +".$i." day")), 0, 3).".";
+                            echo "<th scope='col'>$date<br>$day</th>";
+                        }
+                        echo "</tr>";
+                        for($i = 9; $i <= 21; $i++) {
+                            echo "<tr>";
+                            for($j = 1; $j <= 7; $j++) {
+                                echo "<td>";
+                                $row = mysqli_fetch_array($result);
+                                $value = $row["date"].$row["time"];
+                                if(!$row['order_id'])
+                                    echo "<input type='checkbox' name='$value' value='$value'/>
+                                        <label for='$value'>".$row["time"].":00</label></td>";
+                                else echo "N/A</td>";
+                            }
+                            echo "</tr>";
+                        }
+                        mysqli_close($dbc);
+                    ?>
                     </table>
                 </div>
                 <div class="contact-right-submit">
