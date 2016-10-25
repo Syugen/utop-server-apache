@@ -45,12 +45,11 @@ locationApp.buildSRC = function() {
   for(var location in this.SRC) {
     var button = document.createElement("BUTTON");
     button.value = location;
-    button.appendChild(document.createTextNode(location));
+    button.appendChild(document.createTextNode(this.NAMES[location]));
     document.getElementById("buttons").appendChild(button);
     button.onclick = function() {
-    console.log(this.value);
       var iframe = document.getElementsByTagName("IFRAME")[0];
-      iframe.setAttribute("src", locationApp.NAMES[this.value]);
+      iframe.setAttribute("src", locationApp.SRC[this.value]);
     };
   }
 }
