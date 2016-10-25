@@ -50,7 +50,7 @@ locationApp.buildSRC = function() {
     button.onclick = function() {
     console.log(this.value);
       var iframe = document.getElementsByTagName("IFRAME")[0];
-      iframe.setAttribute("src", locationApp.SRC[this.value]);
+      iframe.setAttribute("src", locationApp.NAMES[this.value]);
     };
   }
 }
