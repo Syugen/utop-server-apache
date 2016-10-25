@@ -124,6 +124,8 @@
     <div class="contact-section" id="contact">
         <div class="container">
             <h3>Booking</h3>
+
+            <!--从这里开始-->
             <div class="contact-details">
                 <form action="submit.php" onSubmit="return validate(this);" method="post">
                 <div class="contact-left">
@@ -197,6 +199,7 @@
                 </div>
                 </form>
             </div>         
+        <!--到这里结束-->
         </div>
     </div>
     <!--end-contact-section-->
