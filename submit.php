@@ -4,12 +4,16 @@
         header("Location: 404.html");
         exit;
     }
-    
+
+    setcookie("utopName", $_POST["name"], time() + 360000);
+    setcookie("utopEmail", $_POST["email"], time() + 360000);
+    setcookie("utopTime", date("YmdHis"), time() + 360000);
+
     // 表单中最常用的三项
     $name = $_POST["name"];
     $email = $_POST["email"];
     $course = $_POST["course"];
-    
+
     // 如果选择记住微信、邮箱和课程，设置cookie
     if(isset($_POST["remember"])) {
         setrawcookie("utopRememberName", $name, time() + 360000);

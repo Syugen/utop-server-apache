@@ -1,16 +1,16 @@
 <!DOCTYPE HTML>
 <?php
-	if (!isset($_COOKIE["utoptutorUser"])){
+        if (!isset($_COOKIE["utopName"])){
 		header("Location: 404.html");
 		exit;
 	}
-	setcookie("utoptutorUser", "", time()-360000);
-	setcookie("utoptutorEmail", "", time()-360000);
-	setcookie("utoptutorTime", "", time()-360000);
+        setcookie("utopName", "", time() - 360000);
+	setcookie("utopEmail", "", time() - 360000);
+	setcookie("utopTime", "", time() - 360000);
 
-	$name = $_COOKIE["utoptutorUser"];
-	$email = $_COOKIE["utoptutorEmail"];
-	$curTime = $_COOKIE["utoptutorTime"];
+	$name = $_COOKIE["utopName"];
+	$email = $_COOKIE["utopEmail"];
+	$curTime = $_COOKIE["utopTime"];
 	$tx = $tx_shown = $_GET["tx"];
 	if(isset($_POST["password"]))
 		$tx .= ' '.$_POST["password"];
