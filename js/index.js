@@ -1,36 +1,31 @@
-function validate(thisform)
+function validate(event)
 {
-    if(document.getElementById("submitting").innerHTML == "Submitting...") {
-        document.getElementById("submitErr").innerHTML = "Please do not re-submit.";
-        return false;
-    }
-    var flag = true
+    var flag = true;
     var reg_email = /^(\w-*)+(\.\w+)*@(\w)+((\.\w+)+)$/;
     var reg_ut = /^\w+\.\w+@mail.utoronto.ca$/;
     
-    if(thisform.name.value == "") {
-        document.getElementById("nameErr").
-            innerHTML = "* You must enter a name";
+    if(this.wechatName.value == "") {
+        document.getElementById("nameErr").innerHTML = "* You must enter a name";
         flag = false;
     } else document.getElementById("nameErr").innerHTML = "*";
-    
-    if(thisform.email.value == "") {
+
+    if(this.email.value == "") {
         document.getElementById("emailErr").innerHTML = "* You must enter an email";
         flag = false;
-    } else if(!reg_email.test(thisform.email.value)) {
+    } else if(!reg_email.test(this.email.value)) {
         document.getElementById("emailErr").innerHTML = "* Invalid email";
         flag = false;
-    } else if(!reg_ut.test(thisform.email.value)) {
+    } else if(!reg_ut.test(this.email.value)) {
         document.getElementById("emailErr").innerHTML = "* Not a valid UofT email";
         flag = false;
     } else document.getElementById("emailErr").innerHTML = "*";
     
-    if(thisform.course.selectedIndex == 0) {
+    if(this.course.selectedIndex == 0) {
         document.getElementById("courseErr").innerHTML = "* You must choose a course";
         flag = false;
     } else document.getElementById("courseErr").innerHTML = "*";
     
-    if(thisform.policy.checked == false) {
+    if(this.policy.checked == false) {
         document.getElementById("policyErr").innerHTML = "* You must agree to the policy";
         flag = false;
     } else document.getElementById("policyErr").innerHTML = "";
@@ -42,7 +37,7 @@ function validate(thisform)
         document.getElementById("submitting").innerHTML = "Submitting...";
         document.getElementById("submit").disabled = true;
     }
-    return flag;
+    if(!flag) event.preventDefault();
 }
 
 function getCookie(cname) {
@@ -63,9 +58,10 @@ function getCookie(cname) {
 function autoFill() {
     var name = getCookie("utopRememberName");
     var email = getCookie("utopRememberEmail");
-    var course = getCookie("utopRememberCourse")
+    var course = getCookie("utopRememberCourse");
+
     if(name != "") {
-        document.getElementById("name").value = name;
+        document.getElementById("wechatName").value = name;
         document.getElementById("email").value = email;
         document.getElementById("course").value = course;
         document.getElementById("remember").checked = true;
@@ -73,3 +69,4 @@ function autoFill() {
 }
 
 autoFill();
+document.getElementById("form").onsubmit = function (event) {validate(event);}

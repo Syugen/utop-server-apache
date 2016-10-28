@@ -23,7 +23,7 @@
         }
 
         function PsExec($commandJob) {
-            $command = $commandJob." & echo $!";
+            $command = $commandJob." > /dev/null & echo $!";
             exec($command ,$op);
             $pid = (int)$op[0];
             if($pid!="") return $pid;
@@ -35,8 +35,7 @@
             foreach($output as $row)
             {
                 $row_array = explode(" ", $row);
-                $check_pid = $row_array[1];
-                if($pid == $check_pid) return true;
+                if($pid == $row_array[0] || $pid == $row_array[1]) return true;
             }
             return false;
         }
@@ -57,17 +56,20 @@
         }
 
         // 设置php debug显示选项，无错误时不显示；有错误时显示
-        ini_set('display_errors', 1); error_reporting(E_ALL);
+        //ini_set('display_errors', 1); error_reporting(E_ALL);
 
         // 检查网页刷新cookie，有则正常，并删除；没有则说明刷新过
         if(!isset($_COOKIE["csc108test_index"]))
             header("Location: ../404.html");
-        setcookie("csc108test_index", "", time()-86400);
+            setcookie("csc108test_index", "", time()-86400);
 
         // 上传文件失败
         if(!processFile("dna") or !processFile("palindromes")) {
             echo "<h2>文件上传失败</h2>";
             echo "确定两个文件都上传了？文件名没错？然后再试一次吧。";
+            $file = fopen("all_test_results.txt", "a") or die("Cannot open file.");
+            fwrite($file, date("Y/m/d H:i:s")." Failed to Upload. ".$_SERVER["REMOTE_ADDR"]."\n");
+            fclose($file);
         } else { // 上传文件成功
             // 记录用户ip
             $file = fopen("ip.txt", "w") or die("Cannot open file.");
@@ -82,6 +84,9 @@
                 echo "<h2>死循环！</h2>";
                 echo "幸好添加了防止死循环的代码，脆弱的服务器不会因此瘫痪了^_^<br>";
                 echo "请检查你的代码，确保没有死循环~（尤其是while循环）";
+                $file = fopen("all_test_results.txt", "a") or die("Cannot open file.");
+                fwrite($file, date("Y/m/d H:i:s")." Infinite Loop. ".$_SERVER["REMOTE_ADDR"]."\n");
+                fclose($file);
             } else if(file_exists("test_result.txt")) {
                 // 成功
                 $file = fopen("test_result.txt", "r");
@@ -93,9 +98,11 @@
                 // 编译错误
                 $file = fopen("error.txt", "r");
                 $content = fread($file, filesize("error.txt"));
-                unlink("error.txt");
                 echo "<h2>你的代码无法编译</h2>请确保代码中无语法错误再提交。<br>";
                 echo "错误信息如下：<br><code><pre>".$content."</pre></code>";
+                $file = fopen("all_test_results.txt", "a") or die("Cannot open file.");
+                fwrite($file, date("Y/m/d H:i:s")." Failed to Compile. ".$_SERVER["REMOTE_ADDR"]."\n");
+                fclose($file);
             }
         }
         if(file_exists("dna.py")) unlink("dna.py");

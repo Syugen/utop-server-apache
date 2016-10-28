@@ -127,18 +127,18 @@
 
             <!--从这里开始-->
             <div class="contact-details">
-                <form action="submit.php" onSubmit="return validate(this);" method="post">
+                <form action="submit.php" id="form" method="post">
                 <div class="contact-left">
                     微信ID (非昵称，请勿输入中文字符):
                     <span id="nameErr" class="error">*</span><br>
-                    <input type="text" class="text" name="name" id="name"
+                    <input type="text" class="text" name="wechatName" id="wechatName"
                     placeholder="WeChat Name" pattern="[\w.-]+" required>
-                    
+
                     U of T 邮箱:
                     <span id="emailErr" class="error">*</span><br>
                     <input type="text" class="text" name="email" id="email"
                     placeholder="Email" pattern="\w+\.\w+@mail.utoronto.ca" required>
-                    
+
                     课程: [<a href="course.html" target="_blank">详情</a>]
                     <span class="error">[10月22日更新CSC108 A2推荐]</span>
                     <span id="courseErr" class="error">*</span><br>
@@ -149,17 +149,17 @@
                         <option value="CSC148">CSC148 (单人, $35/hr)</option>
                         <option value="CSC165">CSC165 (单人, $35/hr)</option>
                     </select>
-                    
+
                     地点: (如有特殊需求请联系微信客服UtopTutor)<br>
                     Bahen Center [默认首选] / Kelly Library [周末推荐]<br>
                     Robarts Library / New College
                     [<a href="location" target="_blank">地图</a>]<br><br>
-                    
+
                     <input type='checkbox' id='policy' required>
                     I agree to the <a href="policy.html" target="_blank">Policy</a>.
                     <span id="policyErr" class="error">*</span>
                     <span class="error">[10月1日更新]</span><br>
-                    
+
                     <input type='checkbox' id='remember' name='remember' value='remember'>
                     记住微信、邮箱和课程<br>
                 </div>
@@ -195,15 +195,15 @@
                 <div class="contact-right-submit">
                     <span id="submitErr" class="error"></span>
                     <span id="submitting"></span>
-                    <input type="submit" name="submit" id="submit" value="submit" />
+                    <input type="submit" name="submit" id="submit" value="Submit" />
                 </div>
                 </form>
-            </div>         
+            </div>
         <!--到这里结束-->
         </div>
     </div>
     <!--end-contact-section-->
-                
+
     <!--start-footer-section-->
     <div class="footer-section">
         <div class="container">

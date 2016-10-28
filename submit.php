@@ -1,16 +1,16 @@
 <!DOCTYPE HTML>
 <?php
-    if(!isset($_POST["name"])) {
+    if(!isset($_POST["wechatName"])) {
         header("Location: 404.html");
         exit;
     }
 
-    setcookie("utopName", $_POST["name"], time() + 360000);
+    setcookie("utopName", $_POST["wechatName"], time() + 360000);
     setcookie("utopEmail", $_POST["email"], time() + 360000);
     setcookie("utopTime", date("YmdHis"), time() + 360000);
 
     // 表单中最常用的三项
-    $name = $_POST["name"];
+    $name = $_POST["wechatName"];
     $email = $_POST["email"];
     $course = $_POST["course"];
 
@@ -25,16 +25,19 @@
         setrawcookie("utopRememberCourse", "", time() - 360000);
     }
 
-    // 邮件预设置
+    // 邮件预设置(暂时停用)
     require("PHPMailer_5.2.0/class.phpmailer.php");
     $mail = new PHPMailer();
     $mail->IsSMTP();
+    $mail->SMTPDebug = 2;
+    $mail->Debugoutput = 'html';
     $mail->SMTPAuth = true;
+    $mail->SMTPSecure = 'ssl';
     $mail->Host = "smtp.126.com";
-    $mail->Username = "timeless10814@126.com";
-    $mail->Password = "zhouyuan94";
     $mail->Port = 25;
-    $mail->From = "timeless10814@126.com";
+    $mail->Username = "utoptutoring@126.com";
+    $mail->Password = "utoptutor2016";
+    $mail->From = "utoptutoring@126.com";
     $mail->FromName = "UTop Tutor";
     $mail->AddAddress("utoptutoring@gmail.com");
     $mail->AddAddress($email);
@@ -72,7 +75,7 @@
 
     $i = 0;
     foreach ($_POST as $value) {
-        if ($value!="submit" and $value != "remember" and
+        if ($value!="Submit" and $value != "remember" and
             $value!=$name and $value!=$email and $value!=$course) {
             $date = substr($value, 0, 4).substr($value, 5, 2).substr($value, 8, 2);
             $dateDash = substr($value, 0, 10);
@@ -100,7 +103,7 @@
     }
     mysqli_close($dbc);
     $mail->Body .= "<br>Thanks!<br>UTop Tutor";
-    $mail->Send();
+//    $mail->Send();
 ?>
 
 <html>
@@ -122,7 +125,7 @@
             </div>
         </div>
         <!--end header-section-->
-    
+
         <!--start-study-section-->
         <div class="study-section">
             <div class="container">
@@ -133,7 +136,7 @@
                         <?php echo $mail->Body ?><br><br>
                         如果预订信息中出现"Failed to order"表明预定失败（可能是其他同学
                         刚刚报名了这个时间，或者你重复提交了报名），请立刻联系客服（微信：
-                        UTopTutor）。辅导地点具体位置将在辅导前一小时内通知。如需更改地点，
+                        UTopTutoring）。辅导地点具体位置将在辅导前一小时内通知。如需更改地点，
                         有任何其他问题，也请联系客服。
                     </div>
                 </div>
