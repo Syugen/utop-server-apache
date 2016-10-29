@@ -137,7 +137,9 @@
                         如果预订信息中出现"Failed to order"表明预定失败（可能是其他同学
                         刚刚报名了这个时间，或者你重复提交了报名），请立刻联系客服（微信：
                         UTopTutoring）。辅导地点具体位置将在辅导前一小时内通知。如需更改地点，
-                        有任何其他问题，也请联系客服。
+                        有任何其他问题，也请联系客服。<br>
+                        如忘记报名时间，请到<a href="search/">utoptutoring.ml/search</a>
+                        进行查询。网站主页下端也有该链接。
                     </div>
                 </div>
                 <div class="col-md-6 study-grid">

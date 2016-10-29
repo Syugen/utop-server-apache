@@ -1,0 +1,16 @@
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    width: 150px;
+}
+
+.center-div {
+    width: 450px;
+    margin: auto;
+}

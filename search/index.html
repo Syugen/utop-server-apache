@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Utop Tutor Success</title>
+        <title>Utop Tutor Search Order</title>
         <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
         <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="style.css" rel="stylesheet" type="text/css" media="all" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </head>
 
     <body>
@@ -28,6 +28,24 @@
             <div class="container">
                 <div class="study-grid">
                     <h3>Seach Order..<span>!</span><p></h3>
+                    <div class="center-div">
+                        <form action="result.php" id="form" method="post">
+                            微信ID （区分大小写，必须与报名时完全一致）:
+                            <span id="nameErr" class="error">*</span><br>
+                            <input type="text" class="text" name="wechatName" id="wechatName"
+                            placeholder="WeChat Name" pattern="[\w.-]+" required><br>
+        
+                            U of T 邮箱:
+                            <span id="emailErr" class="error">*</span><br>
+                            <input type="text" class="text" name="email" id="email"
+                            placeholder="Email" pattern="\w+\.\w+" required>
+                            @mail.utoronto.ca<br>
+                            
+                            <input type="submit" name="submit" id="submit" value="Submit" />
+                            <span id="submitErr" class="error"></span>
+                            <span id="submitting"></span>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,5 +61,7 @@
             </div>
         </div>
         <!--end-footer-section-->
+        
+        <script src="search.js"></script>
     </body>
 </html> 

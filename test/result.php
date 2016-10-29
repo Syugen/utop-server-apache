@@ -105,8 +105,8 @@
                 fclose($file);
             }
         }
-        if(file_exists("dna.py")) unlink("dna.py");
-        if(file_exists("palindromes.py")) unlink("palindromes.py");
+//        if(file_exists("dna.py")) unlink("dna.py");
+//        if(file_exists("palindromes.py")) unlink("palindromes.py");
         if(file_exists("ip.txt")) unlink("ip.txt");
     ?>
     <p><a href="./">返回重新测试</a></p>
