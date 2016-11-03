@@ -16,9 +16,9 @@
 
     // 如果选择记住微信、邮箱和课程，设置cookie
     if(isset($_POST["remember"])) {
-        setrawcookie("utopRememberName", $name, time() + 360000);
-        setrawcookie("utopRememberEmail", $email, time() + 360000);
-        setrawcookie("utopRememberCourse", $course, time() + 360000);
+        setrawcookie("utopRememberName", $name, time() + 10000000);
+        setrawcookie("utopRememberEmail", $email, time() + 10000000);
+        setrawcookie("utopRememberCourse", $course, time() + 10000000);
     } else {
         setrawcookie("utopRememberName", "", time() - 360000);
         setrawcookie("utopRememberEmail", "", time() - 360000);

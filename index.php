@@ -140,7 +140,6 @@
                             placeholder="Email" pattern="\w+\.\w+@mail.utoronto.ca" required>
         
                             课程: [<a href="course.html" target="_blank">详情</a>]
-                            <span class="error">[10月22日更新CSC108 A2推荐]</span>
                             <span id="courseErr" class="error">*</span><br>
                             <select name="course" id="course" required>
                                 <option value="0" selected disabled>PLEASE SELECT</option>
@@ -150,15 +149,14 @@
                                 <option value="CSC165">CSC165 (单人, $35/hr)</option>
                             </select>
         
-                            地点: (如有特殊需求请联系微信客服UtopTutor)<br>
+                            地点: (如有特殊需求请联系微信客服UtopTutoring)<br>
                             Bahen Center [默认首选] / Kelly Library [周末推荐]<br>
                             Robarts Library / New College
                             [<a href="location" target="_blank">地图</a>]<br><br>
         
                             <input type='checkbox' id='policy' required>
                             I agree to the <a href="policy.html" target="_blank">Policy</a>.
-                            <span id="policyErr" class="error">*</span>
-                            <span class="error">[10月1日更新]</span><br>
+                            <span id="policyErr" class="error">*</span><br>
         
                             <input type='checkbox' id='remember' name='remember' value='remember'>
                             记住微信、邮箱和课程<br>
@@ -216,5 +214,11 @@
         <!--end-footer-section-->
     
         <script src="js/index.js"></script>
+        <script>
+            autoFill(true);
+            document.getElementById("form").onsubmit = function (event) {
+                validateAll(event);
+            }
+        </script>
     </body>
 </html> 

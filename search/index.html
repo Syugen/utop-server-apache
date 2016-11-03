@@ -62,6 +62,12 @@
         </div>
         <!--end-footer-section-->
         
-        <script src="search.js"></script>
+        <script src="../js/index.js"></script>
+        <script>
+            autoFill(false);
+            document.getElementById("form").onsubmit = function (event) {
+                validateNameEmail(event);
+            }
+        </script>
     </body>
 </html> 

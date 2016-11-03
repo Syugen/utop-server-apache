@@ -1,4 +1,5 @@
 import unittest
+import builtins
 from palindromes import *
 from dna import *
 
@@ -383,26 +384,19 @@ class TestCorrectMutations(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main(exit=False)
 
-    string = ''    
+    string = 'Result:\n'
     for i in range(len(total)):
         string += '    ' + function_names[i] + ': ' + \
             str(correctness[i]) + '/' + str(total[i]) + '\n'
     string += 'Total: ' + str(sum(correctness)) + '/' + str(sum(total)) + '\n'
     if sum(correctness) == sum(total):
         string += 'Congratulations! You passed all our tests.\n'
-    string += 'Please note that we didn\'t check your style and docstring.'
+    string += 'Please note that we didn\'t check your style and docstring.\n'
 
-    file = open('test_result.txt', 'w')
+    file = open('show_result.txt', 'w')
     file.write(string)
     file.close()
 
-    file = open('ip.txt')
-    ip = file.read()
-    file.close()
-
-    import time
-    result = [''.join(lst) for lst in result]
-    file = open('all_test_results.txt', 'a')
-    file.write(time.strftime("%Y/%m/%d %H:%M:%S") + ' ' +\
-               str(correctness) + ' ' + str(result) + ' ' + ip + '\n')
+    file = open('log_result.txt', 'w')
+    file.write(str([''.join(lst) for lst in result]))
     file.close()

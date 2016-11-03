@@ -1,11 +1,15 @@
 function validate(event)
 {
     var flag = true;
+    var reg_name = /^[\w.-]+$/;
     var reg_email = /^(\w-*)+(\.\w+)*$/;
     var reg_ut = /^\w+\.\w+$/;
     
     if(this.wechatName.value == "") {
         document.getElementById("nameErr").innerHTML = "* You must enter a name";
+        flag = false;
+    } else if(!reg_name.test(this.wechatName.value)) {
+        document.getElementById("nameErr").innerHTML = "* 只能填写字母、数字、下划线";
         flag = false;
     } else document.getElementById("nameErr").innerHTML = "*";
 

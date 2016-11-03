@@ -600,3 +600,597 @@
 [2016-10-28 19:29:35] Slot set to empty:
 [2016-10-28 19:29:35] UPDATE timetable SET order_id=NULL WHERE date='2016-11-07' and time='11'
 [2016-10-28 19:29:35] DELETE FROM orders WHERE order_id=20161028192508
+[2016-10-28 23:59:23] Change on time slot: 2016-10-30 9.
+[2016-10-28 23:59:23] Fetching data:
+[2016-10-28 23:59:23] SELECT * FROM timetable WHERE date='2016-10-30' and time='9'
+[2016-10-28 23:59:23] Slot set to empty:
+[2016-10-28 23:59:23] UPDATE timetable SET order_id=NULL WHERE date='2016-10-30' and time='9'
+[2016-10-28 23:59:23] DELETE FROM orders WHERE order_id=Personal
+[2016-10-28 23:59:23] Change on time slot: 2016-10-30 10.
+[2016-10-28 23:59:23] Fetching data:
+[2016-10-28 23:59:23] SELECT * FROM timetable WHERE date='2016-10-30' and time='10'
+[2016-10-28 23:59:23] Slot set to empty:
+[2016-10-28 23:59:23] UPDATE timetable SET order_id=NULL WHERE date='2016-10-30' and time='10'
+[2016-10-28 23:59:23] DELETE FROM orders WHERE order_id=Personal
+[2016-10-28 23:59:23] Change on time slot: 2016-10-30 19.
+[2016-10-28 23:59:23] Fetching data:
+[2016-10-28 23:59:23] SELECT * FROM timetable WHERE date='2016-10-30' and time='19'
+[2016-10-28 23:59:23] Slot set to empty:
+[2016-10-28 23:59:23] UPDATE timetable SET order_id=NULL WHERE date='2016-10-30' and time='19'
+[2016-10-28 23:59:23] DELETE FROM orders WHERE order_id=Personal
+[2016-10-28 23:59:23] Change on time slot: 2016-10-30 20.
+[2016-10-28 23:59:23] Fetching data:
+[2016-10-28 23:59:23] SELECT * FROM timetable WHERE date='2016-10-30' and time='20'
+[2016-10-28 23:59:23] Slot set to empty:
+[2016-10-28 23:59:23] UPDATE timetable SET order_id=NULL WHERE date='2016-10-30' and time='20'
+[2016-10-28 23:59:23] DELETE FROM orders WHERE order_id=Personal
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 9.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='9'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='9'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 9.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='9'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='9'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 9.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='9'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='9'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 9.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='9'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='9'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 9.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='9'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='9'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-09 9.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-09' and time='9'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-09' and time='9'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 10.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='10'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='10'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 10.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='10'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='10'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 10.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='10'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='10'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 10.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='10'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='10'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 10.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='10'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='10'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-09 10.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-09' and time='10'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-09' and time='10'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-01 11.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-01' and time='11'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-01' and time='11'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 11.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='11'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='11'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-03 11.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-03' and time='11'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-03' and time='11'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 11.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='11'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='11'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 11.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='11'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='11'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 11.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='11'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='11'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 11.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='11'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='11'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 11.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='11'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='11'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 12.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='12'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='12'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 12.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='12'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='12'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 12.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='12'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='12'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 12.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='12'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='12'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 12.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='12'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='12'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 12.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='12'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='12'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 13.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='13'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='13'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 13.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='13'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='13'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 13.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='13'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='13'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 13.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='13'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='13'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 13.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='13'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='13'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 13.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='13'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='13'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-01 14.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-01' and time='14'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-01' and time='14'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 14.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='14'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='14'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 14.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='14'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='14'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 14.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='14'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='14'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 14.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='14'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='14'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 14.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='14'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='14'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 14.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='14'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='14'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-01 15.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-01' and time='15'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-01' and time='15'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 15.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='15'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='15'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 15.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='15'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='15'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 15.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='15'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='15'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 15.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='15'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='15'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 15.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='15'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='15'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 15.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='15'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='15'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-01 16.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-01' and time='16'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-01' and time='16'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 16.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='16'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='16'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 16.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='16'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='16'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 16.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='16'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='16'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 16.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='16'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='16'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 16.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='16'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='16'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 16.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='16'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='16'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 17.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='17'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='17'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 17.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='17'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='17'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 17.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='17'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='17'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 17.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='17'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='17'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 17.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='17'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='17'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 17.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='17'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='17'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 18.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='18'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='18'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 18.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='18'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='18'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 18.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='18'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='18'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 18.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='18'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='18'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 18.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='18'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='18'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 18.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='18'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='18'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 19.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='19'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='19'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 19.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='19'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='19'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 19.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='19'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='19'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 19.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='19'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='19'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 19.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='19'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='19'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 19.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='19'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='19'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 20.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='20'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='20'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-03 20.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-03' and time='20'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-03' and time='20'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 20.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='20'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='20'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 20.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='20'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='20'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 20.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='20'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='20'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 20.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='20'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='20'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 20.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='20'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='20'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-02 21.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-02' and time='21'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-02' and time='21'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-03 21.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-03' and time='21'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-03' and time='21'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-04 21.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-04' and time='21'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='21'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-05 21.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-05' and time='21'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-05' and time='21'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-06 21.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-06' and time='21'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-06' and time='21'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-07 21.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-07' and time='21'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-07' and time='21'
+[2016-10-29 03:12:01] Change on time slot: 2016-11-08 21.
+[2016-10-29 03:12:01] Fetching data:
+[2016-10-29 03:12:01] SELECT * FROM timetable WHERE date='2016-11-08' and time='21'
+[2016-10-29 03:12:01] Slot set to personal use:
+[2016-10-29 03:12:01] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-08' and time='21'
+[2016-10-29 11:33:04] Change on time slot: 2016-10-30 11.
+[2016-10-29 11:33:04] Fetching data:
+[2016-10-29 11:33:04] SELECT * FROM timetable WHERE date='2016-10-30' and time='11'
+[2016-10-29 11:33:04] Slot set to personal use:
+[2016-10-29 11:33:04] UPDATE timetable SET order_id='Personal' WHERE date='2016-10-30' and time='11'
+[2016-10-29 12:02:23] Change on time slot: 2016-10-30 16.
+[2016-10-29 12:02:23] Fetching data:
+[2016-10-29 12:02:23] SELECT * FROM timetable WHERE date='2016-10-30' and time='16'
+[2016-10-29 12:02:23] Slot set to empty:
+[2016-10-29 12:02:23] UPDATE timetable SET order_id=NULL WHERE date='2016-10-30' and time='16'
+[2016-10-29 12:02:23] DELETE FROM orders WHERE order_id=20161028174924
+[2016-10-29 18:50:51] Change on time slot: 2016-10-30 14.
+[2016-10-29 18:50:51] Fetching data:
+[2016-10-29 18:50:51] SELECT * FROM timetable WHERE date='2016-10-30' and time='14'
+[2016-10-29 18:50:51] Slot set to empty:
+[2016-10-29 18:50:51] UPDATE timetable SET order_id=NULL WHERE date='2016-10-30' and time='14'
+[2016-10-29 18:50:51] DELETE FROM orders WHERE order_id=20161028021419
+[2016-10-29 18:50:51] Change on time slot: 2016-10-30 15.
+[2016-10-29 18:50:51] Fetching data:
+[2016-10-29 18:50:51] SELECT * FROM timetable WHERE date='2016-10-30' and time='15'
+[2016-10-29 18:50:51] Slot set to empty:
+[2016-10-29 18:50:51] UPDATE timetable SET order_id=NULL WHERE date='2016-10-30' and time='15'
+[2016-10-29 18:50:51] DELETE FROM orders WHERE order_id=20161028021419
+[2016-10-29 20:26:51] Change on time slot: 2016-10-30 11.
+[2016-10-29 20:26:51] Fetching data:
+[2016-10-29 20:26:51] SELECT * FROM timetable WHERE date='2016-10-30' and time='11'
+[2016-10-29 20:26:51] Slot set to empty:
+[2016-10-29 20:26:51] UPDATE timetable SET order_id=NULL WHERE date='2016-10-30' and time='11'
+[2016-10-29 20:26:51] DELETE FROM orders WHERE order_id=Personal
+[2016-10-29 22:44:30] Change on time slot: 2016-10-30 9.
+[2016-10-29 22:44:30] Fetching data:
+[2016-10-29 22:44:30] SELECT * FROM timetable WHERE date='2016-10-30' and time='9'
+[2016-10-29 22:44:30] Slot set to personal use:
+[2016-10-29 22:44:30] UPDATE timetable SET order_id='Personal' WHERE date='2016-10-30' and time='9'
+[2016-10-29 22:44:30] Change on time slot: 2016-10-30 10.
+[2016-10-29 22:44:30] Fetching data:
+[2016-10-29 22:44:30] SELECT * FROM timetable WHERE date='2016-10-30' and time='10'
+[2016-10-29 22:44:30] Slot set to personal use:
+[2016-10-29 22:44:30] UPDATE timetable SET order_id='Personal' WHERE date='2016-10-30' and time='10'
+[2016-10-29 22:44:30] Change on time slot: 2016-10-30 11.
+[2016-10-29 22:44:30] Fetching data:
+[2016-10-29 22:44:30] SELECT * FROM timetable WHERE date='2016-10-30' and time='11'
+[2016-10-29 22:44:30] Slot set to personal use:
+[2016-10-29 22:44:30] UPDATE timetable SET order_id='Personal' WHERE date='2016-10-30' and time='11'
+[2016-10-29 22:44:30] Change on time slot: 2016-10-30 12.
+[2016-10-29 22:44:30] Fetching data:
+[2016-10-29 22:44:30] SELECT * FROM timetable WHERE date='2016-10-30' and time='12'
+[2016-10-29 22:44:30] Slot set to personal use:
+[2016-10-29 22:44:30] UPDATE timetable SET order_id='Personal' WHERE date='2016-10-30' and time='12'
+[2016-10-29 22:44:50] Change on time slot: 2016-10-30 21.
+[2016-10-29 22:44:50] Fetching data:
+[2016-10-29 22:44:50] SELECT * FROM timetable WHERE date='2016-10-30' and time='21'
+[2016-10-29 22:44:50] Slot set to empty:
+[2016-10-29 22:44:51] UPDATE timetable SET order_id=NULL WHERE date='2016-10-30' and time='21'
+[2016-10-29 22:44:51] DELETE FROM orders WHERE order_id=Personal
+[2016-10-29 22:45:28] Change on time slot: 2016-10-30 15.
+[2016-10-29 22:45:28] Fetching data:
+[2016-10-29 22:45:28] SELECT * FROM timetable WHERE date='2016-10-30' and time='15'
+[2016-10-29 22:45:28] Slot set to personal use:
+[2016-10-29 22:45:28] UPDATE timetable SET order_id='Personal' WHERE date='2016-10-30' and time='15'
+[2016-10-29 22:45:58] Change on time slot: 2016-11-01 10.
+[2016-10-29 22:45:58] Fetching data:
+[2016-10-29 22:45:58] SELECT * FROM timetable WHERE date='2016-11-01' and time='10'
+[2016-10-29 22:45:58] Slot set to empty:
+[2016-10-29 22:45:58] UPDATE timetable SET order_id=NULL WHERE date='2016-11-01' and time='10'
+[2016-10-29 22:45:58] DELETE FROM orders WHERE order_id=Personal
+[2016-10-29 22:45:58] Change on time slot: 2016-11-01 11.
+[2016-10-29 22:45:58] Fetching data:
+[2016-10-29 22:45:58] SELECT * FROM timetable WHERE date='2016-11-01' and time='11'
+[2016-10-29 22:45:58] Slot set to empty:
+[2016-10-29 22:45:58] UPDATE timetable SET order_id=NULL WHERE date='2016-11-01' and time='11'
+[2016-10-29 22:45:58] DELETE FROM orders WHERE order_id=Personal
+[2016-10-29 23:20:50] Change on time slot: 2016-10-30 21.
+[2016-10-29 23:20:50] Fetching data:
+[2016-10-29 23:20:50] SELECT * FROM timetable WHERE date='2016-10-30' and time='21'
+[2016-10-29 23:20:50] Slot set to personal use:
+[2016-10-29 23:20:50] UPDATE timetable SET order_id='Personal' WHERE date='2016-10-30' and time='21'
+[2016-10-30 15:53:12] Change on time slot: 2016-11-01 12.
+[2016-10-30 15:53:12] Fetching data:
+[2016-10-30 15:53:12] SELECT * FROM timetable WHERE date='2016-11-01' and time='12'
+[2016-10-30 15:53:12] Slot set to empty:
+[2016-10-30 15:53:12] UPDATE timetable SET order_id=NULL WHERE date='2016-11-01' and time='12'
+[2016-10-30 15:53:12] DELETE FROM orders WHERE order_id=Personal
+[2016-10-30 21:35:07] Change on time slot: 2016-11-04 10.
+[2016-10-30 21:35:07] Fetching data:
+[2016-10-30 21:35:07] SELECT * FROM timetable WHERE date='2016-11-04' and time='10'
+[2016-10-30 21:35:07] Slot set to empty:
+[2016-10-30 21:35:07] UPDATE timetable SET order_id=NULL WHERE date='2016-11-04' and time='10'
+[2016-10-30 21:35:07] DELETE FROM orders WHERE order_id=Personal
+[2016-10-30 21:36:28] Change on time slot: 2016-11-04 10.
+[2016-10-30 21:36:28] Fetching data:
+[2016-10-30 21:36:28] SELECT * FROM timetable WHERE date='2016-11-04' and time='10'
+[2016-10-30 21:36:28] Slot set to empty:
+[2016-10-30 21:36:28] UPDATE timetable SET order_id=NULL WHERE date='2016-11-04' and time='10'
+[2016-10-30 21:36:28] DELETE FROM orders WHERE order_id=20161030213549
+[2016-10-30 21:52:20] Change on time slot: 2016-11-04 10.
+[2016-10-30 21:52:20] Fetching data:
+[2016-10-30 21:52:20] SELECT * FROM timetable WHERE date='2016-11-04' and time='10'
+[2016-10-30 21:52:20] Slot set to empty:
+[2016-10-30 21:52:20] UPDATE timetable SET order_id=NULL WHERE date='2016-11-04' and time='10'
+[2016-10-30 21:52:20] DELETE FROM orders WHERE order_id=20161030213723
+[2016-10-30 22:03:22] Change on time slot: 2016-11-04 10.
+[2016-10-30 22:03:22] Fetching data:
+[2016-10-30 22:03:22] SELECT * FROM timetable WHERE date='2016-11-04' and time='10'
+[2016-10-30 22:03:22] Slot set to personal use:
+[2016-10-30 22:03:22] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-04' and time='10'
+[2016-10-31 12:26:12] Change on time slot: 2016-11-01 14.
+[2016-10-31 12:26:12] Fetching data:
+[2016-10-31 12:26:12] SELECT * FROM timetable WHERE date='2016-11-01' and time='14'
+[2016-10-31 12:26:12] Slot set to empty:
+[2016-10-31 12:26:12] UPDATE timetable SET order_id=NULL WHERE date='2016-11-01' and time='14'
+[2016-10-31 12:26:12] DELETE FROM orders WHERE order_id=Personal
+[2016-10-31 21:04:52] Change on time slot: 2016-11-01 15.
+[2016-10-31 21:04:52] Fetching data:
+[2016-10-31 21:04:52] SELECT * FROM timetable WHERE date='2016-11-01' and time='15'
+[2016-10-31 21:04:52] Slot set to empty:
+[2016-10-31 21:04:52] UPDATE timetable SET order_id=NULL WHERE date='2016-11-01' and time='15'
+[2016-10-31 21:04:52] DELETE FROM orders WHERE order_id=Personal
+[2016-10-31 21:09:05] Change on time slot: 2016-11-01 15.
+[2016-10-31 21:09:05] Fetching data:
+[2016-10-31 21:09:05] SELECT * FROM timetable WHERE date='2016-11-01' and time='15'
+[2016-10-31 21:09:05] Slot set to personal use:
+[2016-10-31 21:09:05] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-01' and time='15'
+[2016-10-31 21:11:58] Change on time slot: 2016-11-01 15.
+[2016-10-31 21:11:58] Fetching data:
+[2016-10-31 21:11:58] SELECT * FROM timetable WHERE date='2016-11-01' and time='15'
+[2016-10-31 21:11:58] Slot set to empty:
+[2016-10-31 21:11:58] UPDATE timetable SET order_id=NULL WHERE date='2016-11-01' and time='15'
+[2016-10-31 21:11:58] DELETE FROM orders WHERE order_id=Personal
+[2016-10-31 21:20:36] Change on time slot: 2016-11-01 15.
+[2016-10-31 21:20:36] Fetching data:
+[2016-10-31 21:20:36] SELECT * FROM timetable WHERE date='2016-11-01' and time='15'
+[2016-10-31 21:20:36] Slot set to personal use:
+[2016-10-31 21:20:36] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-01' and time='15'
+[2016-10-31 21:30:01] Change on time slot: 2016-11-01 16.
+[2016-10-31 21:30:01] Fetching data:
+[2016-10-31 21:30:01] SELECT * FROM timetable WHERE date='2016-11-01' and time='16'
+[2016-10-31 21:30:01] Slot set to empty:
+[2016-10-31 21:30:01] UPDATE timetable SET order_id=NULL WHERE date='2016-11-01' and time='16'
+[2016-10-31 21:30:01] DELETE FROM orders WHERE order_id=Personal
+[2016-10-31 21:44:20] Change on time slot: 2016-11-01 16.
+[2016-10-31 21:44:20] Fetching data:
+[2016-10-31 21:44:20] SELECT * FROM timetable WHERE date='2016-11-01' and time='16'
+[2016-10-31 21:44:20] Slot set to personal use:
+[2016-10-31 21:44:20] UPDATE timetable SET order_id='Personal' WHERE date='2016-11-01' and time='16'
